@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory >
+  <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+  <property name="hibernate.show_sql">true</property>
+  <property name="hibernate.format_sql">true</property>
+  <property name="hibernate.hbm2ddl.auto">update</property>
+  <mapping class="com.rent.model.Account"/>
+  <mapping class="com.rent.model.Car"/>
+  <mapping class="com.rent.model.Client"/>
+  <mapping class="com.rent.model.Message"/>
+  <mapping class="com.rent.model.Payment"/>
+  <mapping class="com.rent.model.Review"/>
+  <mapping class="com.rent.model.ShopCart"/>
+  <mapping class="com.rent.model.Authorities"/>
+  <mapping class="com.rent.model.Users"/>
+ </session-factory>
+</hibernate-configuration>
